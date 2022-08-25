@@ -32,13 +32,13 @@ public class Student {
     }
     public void addBulExamSozNote(int c1,int c2,int c3){
         if (c1 >= 0 && c1 <= 100){
-            this.c1.note = c1;
+            this.c1.sozNote = c1;
         }
         if (c2 >= 0 && c2 <= 100){
-            this.c2.note = c2;
+            this.c2.sozNote = c2;
         }
         if (c3 >= 0 && c3 <= 100){
-            this.c3.note = c3;
+            this.c3.sozNote = c3;
         }
     }
     void isPass(){
@@ -53,7 +53,7 @@ public class Student {
         printNote();
     }
     public int calcAverage(){
-        return (int)((this.c1.note * 0.8 + this.c1.sozNote *0.2) +(this.c2.note * 0.8 + this.c2.sozNote *0.2)+(this.c3.note * 0.8 + this.c3.sozNote *0.2));
+        return (int)((this.c1.note * 0.8 + this.c1.sozNote *0.2) +(this.c2.note * 0.8 + this.c2.sozNote *0.2)+(this.c3.note * 0.8 + this.c3.sozNote *0.2)) / 3;
     }
     void printNote() {
         System.out.println(this.c1.name + " Notu\t:" + this.c1.note);
