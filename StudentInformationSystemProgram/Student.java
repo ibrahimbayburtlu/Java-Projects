@@ -43,7 +43,7 @@ public class Student {
     }
     void isPass(){
         System.out.println("==================");
-        this.average = calcAverage();
+        this.average = (float)calcAverage() / 3;
         if (this.average >= 55){
             System.out.println("Sinifi basarili gectiniz.");
             this.isPass = true;
@@ -53,7 +53,7 @@ public class Student {
         printNote();
     }
     public int calcAverage(){
-        return (int)((this.c1.note * 0.8 + this.c1.sozNote *0.2) +(this.c2.note * 0.8 + this.c2.sozNote *0.2)+(this.c3.note * 0.8 + this.c3.sozNote *0.2)) / 3;
+        return (int)((this.c1.note * 0.8 + this.c1.sozNote *0.2) +(this.c2.note * 0.8 + this.c2.sozNote *0.2)+(this.c3.note * 0.8 + this.c3.sozNote *0.2));
     }
     void printNote() {
         System.out.println(this.c1.name + " Notu\t:" + this.c1.note);

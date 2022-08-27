@@ -17,11 +17,12 @@ public class Main {
 
         Student s1 = new Student("İnek Saban", "123", "4", mat, fizik, kimya);
         s1.addBulExamNote(100,10,100);
+        s1.addBulExamSozNote(60,70,80);
         s1.isPass();
 
         Student s2 = new Student("Güdük Necmi", "444", "4", mat, fizik, kimya);
         s2.addBulExamNote(50,30,70);
-        s1.addBulExamSozNote(60,70,80);
+        s2.addBulExamSozNote(40,50,60);
         s2.isPass();
     }
 }
